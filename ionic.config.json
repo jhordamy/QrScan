@@ -1,0 +1,7 @@
+{
+  "name": "QRScan",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
