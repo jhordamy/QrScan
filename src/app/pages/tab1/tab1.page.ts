@@ -33,7 +33,7 @@ export class Tab1Page {
        }).catch(err => {
            console.log('Error', err);
            // this.datalocal.guardarRegistro('QR_CODE', 'http://ikenary.com');
-           this.datalocal.guardarRegistro('QR_CODE', 'geo: 1293, -732');
+           this.datalocal.guardarRegistro('QR_CODE','geo:-3.985837,-79.353839');
            // this.datalocal.guardarRegistro('QR_CODE', 'Hola Bienvenido');
        });
     }

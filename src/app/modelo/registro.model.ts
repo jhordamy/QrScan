@@ -23,7 +23,7 @@ export class Registro{
                 this.icon = 'pin';
                 break;
             default:
-                this.type = 'No Identificado';
+                this.type = 'mapa';
                 this.icon = 'create';
                 break;
         }

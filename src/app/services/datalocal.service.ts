@@ -44,9 +44,8 @@ export class DatalocalService {
         break;
 
       case 'mapa':
-        this.nav.navigateForward(`/tabs/mapa + ${reg.text}`);
+        this.nav.navigateForward(`/tabs/mapa/${reg.text}`);
         // this.nav.navigateForward('tabs/mapa' + reg.text);
-        console.log(reg.text, reg.type);
         break;
       default:
         // implement un mensaje en pantalla
