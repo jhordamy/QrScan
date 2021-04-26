@@ -28,7 +28,7 @@ export class MapaPage implements OnInit, AfterViewInit {
     var map = new mapboxgl.Map({
       style: 'mapbox://styles/mapbox/light-v10',
       center: [this.lng, this.lat],
-      zoom: 17,
+      zoom: 18,
       pitch: 45,
       bearing: -17.6,
       container: 'map',
@@ -37,6 +37,9 @@ export class MapaPage implements OnInit, AfterViewInit {
       // tslint:disable-next-line:whitespace
       map.on('load',() => {
         map.resize();
+        var marker = new mapboxgl.Marker()
+          .setLngLat([this.lng, this.lat])
+          .addTo(map);
         // Insert the layer beneath any symbol layer.
         const layers = map.getStyle().layers;
         let labelLayerId;

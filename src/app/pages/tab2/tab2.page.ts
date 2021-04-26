@@ -10,8 +10,8 @@ export class Tab2Page {
 
   constructor(public datalocal: DatalocalService) {}
   enviarCorreo(){
-    console.log('Enviando Correo..');
-
+    console.log('Enviando Correo');
+    this.datalocal.enviarCorreo();
   }
   abrirRegistro(registro){
     this.datalocal.abrirRegistro(registro);
